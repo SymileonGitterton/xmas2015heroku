@@ -2,9 +2,13 @@
 ##2D retelling of the Christmas Story using javascript with moveable sprites
 
 **Controls:**
+
   \<   back to previous scene
+
   \>   forward to next scene
+
   6   enter fullscreen display
+
   p   pause music
   
   J   scroll backdrop to left
