@@ -1,15 +1,11 @@
 # xmas2015heroku
-##2D retelling of the Christmas Story using javascript with moveable sprites
+####2D retelling of the Christmas Story using javascript with moveable sprites
 
-**Controls:**
-
-  \<   back to previous scene
-
-  \>   forward to next scene
-
-  6   enter fullscreen display
-
-  p   pause music
+**Controls:**  
+  \<   back to previous scene  
+  \>   forward to next scene  
+  6   enter fullscreen display  
+  p   pause music  
   
   J   scroll backdrop to left
   L   scroll backdrop to right
