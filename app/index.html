@@ -611,7 +611,7 @@
                             new Backdrop('backdrops/1. MaryRoom/house-02.jpg',false),
                             new FourDirectionSprite(false, "characters/angel/angel2.svg",250,250),
                             //[ new TwoDirectionSprite(0,true,false, 'characters/Mary/maryQueenOfHeaven.png', 200,height-250, marySpeed, 218,606, 1.0,false,true) 
-                            [ new TwoDirectionSprite(0,true,false, 'characters/Mary/standingMary1.svg', 200,height-250, marySpeed, 200,550, 1.0,false,true) 
+                            [ new TwoDirectionSprite(0,true,false, 'characters/Mary/standingMary1.svg', 200,height-500, marySpeed, 200,550, 1.0,false,true) 
                             ],
                             [],
                             function() { 
@@ -632,7 +632,7 @@
                                 this.wasdSprite.x = 100;    this.wasdSprite.y = 100;
                                 this.wasdSprite.xSpeed = 0; this.wasdSprite.ySpeed = 0;
                                 // Mary initial position
-                                this.twoDirSprites[0].x = width-200; this.twoDirSprites[0].y = 250;
+                                this.twoDirSprites[0].x = width-200; this.twoDirSprites[0].y = height-500;
                             }
                           )
                );
@@ -711,9 +711,9 @@
                               //new TwoDirectionSprite(2,true,false, 'characters/Mary/maryStanding.svg', -26,height-340, holyFamilySpeed+1, 150,390, 1.0,true,true,false),
                               new TwoDirectionSprite(1,true,false, 'characters/Mary/maryOnDonkey2.svg', 0,height-300, holyFamilySpeed-1, 350,350, 1.0,false,true,false),
                               new TwoDirectionSprite(1,true,false, "characters/joseph/walkingJoseph.svg", 0,height-370, holyFamilySpeed+2, 350,420, 1.0,true,true,false),
-                              new TwoDirectionSprite(3,true,false, "backdrops/4. NoRoomAtTheInn/no.png", 900-113,264, zeroSpeed, 113,79, 1.0,true,false,true),
-                              new TwoDirectionSprite(4,true,false, "backdrops/4. NoRoomAtTheInn/vacancy.png", 900,264, zeroSpeed, 266,79, 1.0,true,true,false),
-                              new TwoDirectionSprite(5,true,false, "characters/innkeeper/inkeeper2.svg", 880,height-370, zeroSpeed, 150,350, 1.0,true,true,false)
+                              new TwoDirectionSprite(3,true,false, "backdrops/4. NoRoomAtTheInn/no.png", width-493,height-464, zeroSpeed, 113,79, 1.0,true,false,true),
+                              new TwoDirectionSprite(4,true,false, "backdrops/4. NoRoomAtTheInn/vacancy.png", width-380,height-464, zeroSpeed, 266,79, 1.0,true,true,false),
+                              new TwoDirectionSprite(5,true,false, "characters/innkeeper/inkeeper2.svg", width-400,height-370, zeroSpeed, 150,350, 1.0,true,true,false)
                             ],
                             [],
                             function() {
@@ -737,7 +737,7 @@
     scenes.push(new Scene(5,        // Wise men visit Herod
                             new Backdrop('backdrops/5. HerodThrone/Throne_of_Napoleon,_in_the_throne_room_of_Fontainebleau_Palace.jpg',false),
                             null,
-                            [ new TwoDirectionSprite(0,true,false, "characters/herod/sittingHerod.svg", 410,height-640, 0, 390,550, 1.0,true,true,false),
+                            [ new TwoDirectionSprite(0,true,false, "characters/herod/sittingHerod.svg", width-870,height-640, 0, 390,550, 1.0,true,true,false),
                           new TwoDirectionSprite(1,true,false, "characters/herod/soldier1.svg",   width-470,height-510, zeroSpeed, 150,360, 1.0,true,true,false),
                           new TwoDirectionSprite(1,true,false, "characters/herod/soldier2.png",   width-350,height-450, zeroSpeed, 150,330, 1.0,true,true,false),
                               new TwoDirectionSprite(1,true,false, "characters/wiseMen/standingFirstWM.svg",   99,height-350, kingSpeed+1, 195,384, 1.0,true,true,false),
@@ -798,7 +798,7 @@
                             new FourDirectionSprite(false, "characters/angel/angel2.svg",250,250, 1.0),
                             [ new TwoDirectionSprite(8,true,false, "characters/donkey/donkey1.svg", 50,height-280, holyFamilySpeed-1, 389,288, 1.0,false,true,false),
                               //new TwoDirectionSprite(11,true,false, "characters/joseph/standingJoseph.svg", 415,height-450, zeroSpeed, 230,430, 1.0,false,true,false),
-                              new TwoDirectionSprite(11,true,false, "characters/joseph/kneelingJoseph.svg", 430,height-350, zeroSpeed, 160,300, 1.0,false,true,false),
+                              new TwoDirectionSprite(11,true,false, "characters/joseph/kneelingJoseph.svg", Math.floor((width/2)-410),height-350, zeroSpeed, 160,300, 1.0,false,true,false),
                               new TwoDirectionSprite(3,true,false, "characters/wiseMen/kneelingThirdWiseman.svg",   285,height-400, kingSpeed+3, 122,226, 1.6,true,true,false),
                               new TwoDirectionSprite(1,true,false, "characters/wiseMen/kneelingFirstWiseman.svg",   150,height-350, kingSpeed+1, 122,226, 1.6,true,true,false),
                               new TwoDirectionSprite(2,true,false, "characters/wiseMen/kneelingSecondWiseman.svg",   250,height-350, kingSpeed+2, 122,226, 1.6,true,true,false),
@@ -807,10 +807,10 @@
                               new TwoDirectionSprite(6,true,false, "characters/shepherds/shepherd2.png", width-400,height-400, kingSpeed+3, 122,226, 1.0,false,true,false),
                               new TwoDirectionSprite(7,true,false, "characters/sheep/sheep.png", width-400,height-200, kingSpeed+3, 303,166, 1.0,false,true,false)
                             ],
-                            [ new TwoDirectionSprite(9,true,false, "characters/star/staticStar.png", width-410,-30, holyFamilySpeed, 164,186, 1.0,false,true,false),
+                            [ new TwoDirectionSprite(9,true,false, "characters/star/staticStar.png", Math.floor(width*(870/1280)),-30, holyFamilySpeed, 164,186, 1.0,false,true,false),
                               //new TwoDirectionSprite(10 ,true,false, 'characters/Mary/maryQueenOfHeaven.png', 640,height-420, marySpeed, 170,400, 1.0,false,true),
-                              new TwoDirectionSprite(10 ,true,false, 'characters/Mary/kneelingMary.svg', 640,height-400, marySpeed, 153,360, 1.0,false,true),
-                              new TwoDirectionSprite(12,true,false, "characters/baby jesus/jesus1.svg", (width/2)-100,height-200, holyFamilySpeed+1, 175,175, 1.0,false,true,false) 
+                              new TwoDirectionSprite(10 ,true,false, 'characters/Mary/kneelingMary.svg', Math.floor(width/2),height-400, marySpeed, 153,360, 1.0,false,true),
+                              new TwoDirectionSprite(12,true,false, "characters/baby jesus/jesus1.svg", Math.floor(width/2)-100,height-200, holyFamilySpeed+1, 175,175, 1.0,false,true,false) 
                             ],
                             function() {
                                 stopAudio();
