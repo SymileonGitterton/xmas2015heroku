@@ -2,7 +2,7 @@
 require 'sinatra'
 
 # enable static files to be served outside of .public/ folder
-set :public_folder, 'app'
+set :public_folder, '/'
 
 # enable this site to be embedded as an iframe
 configure do
@@ -10,7 +10,7 @@ configure do
 end
 
 get '/' do
-  File.read('app/index.html')
+  File.read('index.html')
 end
 
 # # CRUD routes
